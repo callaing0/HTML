@@ -7,9 +7,9 @@
     <style> /* style = CSS 영역 */
             /* 선택 영역 지정하는 법 
                 1. 태그 선택 : div, img, span 등
-                2. ID 선택 : #ID 
-                3. class 선택: .선택자 (태그 그룹화 목적) */
-                
+                2. ID 선택 : #ID name 
+                3. class 선택: .class name (태그 그룹화 목적) */
+
     ** 색상 선택 방법
         div{background: #ff3636;}        
         #bluebox{background-color: rgb(0, 76, 255)}
