@@ -9,11 +9,11 @@
                 1. 태그 선택 : div, img, span 등
                 2. ID 선택 : #ID name 
                 3. class 선택: .class name (태그 그룹화 목적) */
-
+                
     ** 색상 선택 방법
         div{background: #ff3636;}        
         #bluebox{background-color: rgb(0, 76, 255)}
-        .color{background-color: green}  
+        .color{border: 5px solid yellow; background-color: green} 
 
     </style>
 </head>
