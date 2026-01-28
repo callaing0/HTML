@@ -31,7 +31,7 @@
         /*border-radius: round 처리, 반지름값 삽입, 도통 3px, 5px, 7px, 10px 정도 삽입*/
         #boxWrap{box-sizing : border-box; 
                  background: #fce8ee; 
-                 width: 500px; height: 100px; 
+                 width: 500px; height: 200px; 
                  margin-top: 100px; padding: 20px;
                  border-radius: 7px;}
 
@@ -39,25 +39,26 @@
               background: white;
               border: 1px solid whitesmoke;
               border-radius: 5px;
-              margin-bottom: 10px;
-              display: flex; /* 중앙 정렬을 위한 핵심 코드 */
-              justify-content: center; /* 가로 중앙 */
-              align-items: center;} /* 세로 중앙 */
+              margin-bottom: 10px;} 
 
         #box2{box-sizing : border-box; 
               background: white;
               border: 1px solid whitesmoke;
-              border-radius: 5px;
-              display: flex; 
-              justify-content: center;
-              align-items: center;} 
+              border-radius: 5px;} 
+
+        #box1 b{margin: 100px; padding: 30px;}
+        #box1 span{margin: 100px; padding: 30px;}
     </style>
     
 </head>
 <body>
         <h1 id="title"> 여백의 시작 </h1>
         <div id="boxWrap">
-            <div id="box1">여백의 미</div>
+            <div id="box1">
+                <span>여백의 미</span>
+                <p>아름다울 미</p>
+                <i>미적</i>
+            </div>
             <div id="box2">여유가 없음</div>
         </div>
     
