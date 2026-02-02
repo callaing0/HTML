@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#wrap{
+    width: 1200px; /*최대너비*/
+    position: relative;
+
+    /* 
+    좌우 중심 센터 위치 조정, 너비값 필수
+    margin: auto;
+    border: 1px solid black;
+    height: 200px
+    */
+}
+
+#header{
+    padding: 10px 20px; /*view를 위한 여백 설정(5, 7, 10px)*/
+    
+}
