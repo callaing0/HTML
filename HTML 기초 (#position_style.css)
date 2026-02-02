@@ -35,21 +35,19 @@
     top:50px;
 }
 
-#wrap{
+#wrap{ /*부모 태그*/
     width:1000px;
     height:1000px;
 }
 
 #box4{
-    /*브라우저 기준으로 고정*/
-    position: fixed;
+    position: fixed;  /*브라우저 기준으로 고정*/
     left: 50px;
     bottom: 50px;
 }
 
 #box5{
-    /*네이버 검색창 같은 고정*/
-    position: sticky;
+    position: sticky; /*네이버 검색창 같은 고정*/
     top: 0px;
 
 }
