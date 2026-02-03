@@ -2,6 +2,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /*폰트 변경*/
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* 200~700 사이 숫자 입력 가능 */
+    font-style: normal;
+
 }
 
 #wrap{
@@ -18,5 +24,38 @@
 
 #header{
     padding: 10px 20px; /*view를 위한 여백 설정(5, 7, 10px)*/
-    
+}
+
+/*브라우저 이미지 표현 방법 1*/
+#logoWrap{
+    height: 50px;
+}
+
+#logoWrap img{
+    height: 100%;
+}
+/*브라우저 이미지 표현 방법 2*/
+#logoimg{
+    height: 50px;
+    background: url("./logo1.jpg") no-repeat;
+    width: 100px;
+    background-size: cover;
+}
+
+
+.menuLink{
+    font-size: 25px; /*글자 크기 조절*/
+    color: black; /*글자 색*/
+    text-decoration: none;  /*글자 밑줄 삭제*/
+    font-weight: 700;  /*글자 굵기*/
+    Padding: 3px 7px;
+    margin: 0px 20px;
+}
+
+#logoWrap {
+    float: right;
+}
+
+#logoimg{
+    float: right;
 }
