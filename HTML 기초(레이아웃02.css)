@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#pik {
+    display: flex;   /* 가로 방향으로 정렬 */    
+    gap: 10px;    /* 이미지 사이의 간격 */
+}      
+
+#pik div img {
+    width: 150px;        /* 가로 크기 */
+    height: 300px;       /* 세로 크기 */
+    object-fit: cover;   /* 비율을 유지하며 영역을 채움 (찌그러짐 방지) */
+    display: block;      /* 하단 공백 제거 */
+}
