@@ -1,17 +1,23 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+/* 부모 박스: 자식들을 가로로 나열하되, 자리가 없으면 다음 줄로 넘김 */
+.imgbox {
+    display: flex;
+    flex-wrap: wrap;      /* 중요! 공간이 부족하면 다음 줄로 넘기는 속성 */
+    width: 500px;         /* (150px * 3개) + 여백을 고려한 전체 넓이 */
+    margin: 0 auto;       /* 가운데 정렬 */
+    gap: 15px;            /* 사진 사이의 간격 (가로, 세로 모두 적용) */
 }
 
-#pik {
-    display: flex;   /* 가로 방향으로 정렬 */    
-    gap: 10px;    /* 이미지 사이의 간격 */
-}      
+/* 개별 카드 설정 */
+.imgcard {
+    width: 150px;         /* 요청하신 가로 150 */
+    height: 300px;        /* 요청하신 세로 300 */
+    overflow: hidden;     /* 사진이 박스 밖으로 나가지 않게 함 */
+}
 
-#pik div img {
-    width: 150px;        /* 가로 크기 */
-    height: 300px;       /* 세로 크기 */
-    object-fit: cover;   /* 비율을 유지하며 영역을 채움 (찌그러짐 방지) */
-    display: block;      /* 하단 공백 제거 */
+/* 이미지 설정 */
+.imgcard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    /* 사진 비율을 유지하며 꽉 채움 (찌그러짐 방지) */
+    display: block;
 }
