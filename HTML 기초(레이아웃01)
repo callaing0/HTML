@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!--폰트 적용 링크-->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+NZ+Basic+Guides&display=swap" rel="stylesheet">
+    <!--CSS 적용 링크-->
     <link rel="stylesheet" href="./메뉴만들기.css">
 </head>
 <body>
@@ -23,10 +26,10 @@
                     <a href="./index1.html" class="menuLink">Home</a>
                 </span>
                 <span class="meun">
-                    <a href="./gallery.html" class="menuLink">코스</a>
+                    <a href="./gallery.html" class="menuLink">gallery</a>
                 </span>
                 <span class="meun">
-                    <a href="" class="menuLink">맛집</a>
+                    <a href="" class="menuLink">food</a>
                 </span>
                 <span class="meun">
                     <a href="" class="menuLink">Tip</a>
