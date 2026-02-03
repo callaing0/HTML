@@ -2,12 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /*폰트 변경*/
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400; /* 200~700 사이 숫자 입력 가능 */
-    font-style: normal;
-
 }
 
 #wrap{
@@ -24,6 +18,11 @@
 
 #header{
     padding: 10px 20px; /*view를 위한 여백 설정(5, 7, 10px)*/
+     /*폰트 변경*/
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* 200~700 사이 숫자 입력 가능 */
+    font-style: normal;
 }
 
 /*브라우저 이미지 표현 방법 1*/
