@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사진첩</title>
+    <!--폰트 적용 링크-->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+NZ+Basic+Guides&display=swap" rel="stylesheet">
+    <!--CSS 적용 링크-->
+    <link rel="stylesheet" href="./메뉴만들기.css">
+    <link rel="stylesheet" href="./사진첩.css">
+</head>
+<body>
+    <div id="wrap">
+        <header id="header"> <!-- 로고, 메뉴-->
+            <div id="logoWrap">
+                <img src="./logo1.jpg">
+            </div>
+            <div id="logoimg">
+            </div>
+            <div id="nav">
+                <!-- 웹에서 메뉴는 ul, li 태그를 많이 사용
+                span, a 태그로 메뉴를 만들기도 함-->
+
+                <!--span.meun*4>a.menuLink ctrol+space-->
+                <span class="meun">
+                    <a href="./index1.html" class="menuLink">Home</a>
+                </span>
+                <span class="meun">
+                    <a href="./gallery.html" class="menuLink">gallery</a>
+                </span>
+                <span class="meun">
+                    <a href="" class="menuLink">food</a>
+                </span>
+                <span class="meun">
+                    <a href="" class="menuLink">Tip</a>
+                </span>
+        </header>
+        <main id="main"> 
+            <!--이미지 삽입, 한줄에 이미지 3개씩, 가로 150 높이 300-->
+        <div id="pik">
+            <div id="p01">
+                <img src="./01.jpg">
+            </div>
+            <div id="p02">
+                <img src="./02.jpeg">
+            </div>
+            <div id="p04">
+                <img src="./04.avif">
+            </div>
+        </div>
+        </main>
+        <footer id="footer">
+
+        </footer>
+    </div>
+
+</body>
+</html>
