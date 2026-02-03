@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./메뉴만들기.css">
+</head>
+<body>
+    <div id="wrap">
+        <header id="header"> <!-- 로고, 메뉴-->
+            <div id="logoWrap">
+                <img src="./logo1.jpg">
+            </div>
+            <div id="logoimg">
+            </div>
+            <div id="nav">
+                <!-- 웹에서 메뉴는 ul, li 태그를 많이 사용
+                span, a 태그로 메뉴를 만들기도 함-->
+
+                <!--span.meun*4>a.menuLink ctrol+space-->
+                <span class="meun">
+                    <a href="./index1.html" class="menuLink">Home</a>
+                </span>
+                <span class="meun">
+                    <a href="./gallery.html" class="menuLink">코스</a>
+                </span>
+                <span class="meun">
+                    <a href="" class="menuLink">맛집</a>
+                </span>
+                <span class="meun">
+                    <a href="" class="menuLink">Tip</a>
+                </span>
+        </header>
+        <main id="main"> 
+
+        </main>
+        <footer id="footer">
+
+        </footer>
+    </div>
+
+</body>
+</html>
