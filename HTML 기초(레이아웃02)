@@ -37,16 +37,17 @@
                 </span>
         </header>
         <main id="main"> 
-            <!--이미지 삽입, 한줄에 이미지 3개씩, 가로 150 높이 300-->
-        <div id="pik">
-            <div id="p01">
-                <img src="./01.jpg">
-            </div>
-            <div id="p02">
-                <img src="./02.jpeg">
-            </div>
-            <div id="p04">
-                <img src="./04.avif">
+            <!--이미지 삽입, 한줄에 이미지 3개씩, 3줄로 생성, 가로 150 높이 300-->
+        <div class="imgbox">
+            <div class="imgcard"><img src="./01.jpg"></div>
+            <div class="imgcard"><img src="./02.jpeg"></div>
+            <div class="imgcard"><img src="./04.avif"></div>
+            <div class="imgcard"><img src="./01.jpg"></div>
+            <div class="imgcard"><img src="./02.jpeg"></div>
+            <div class="imgcard"><img src="./04.avif"></div>
+            <div class="imgcard"><img src="./01.jpg"></div>
+            <div class="imgcard"><img src="./02.jpeg"></div>
+            <div class="imgcard"><img src="./04.avif"></div>
             </div>
         </div>
         </main>
