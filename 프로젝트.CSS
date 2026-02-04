@@ -165,8 +165,18 @@ header {
 }
 
 /* 6. 인스타그램 링크 스타일 */
-.insta-link-wrapper{
-  margin-top: 80px; /* <br> 태그 대신 사용 */
+.insta-link-wrapper {
+  position: fixed;    /* 화면에 고정 */
+  bottom: 30px;       /* 하단에서 30px 띄움 */
+  right: 30px;        /* 우측에서 30px 띄움 */
+  z-index: 1000;      /* 다른 콘텐츠에 가려지지 않게 함 */
+  
+  /* 배경과 여백 */
+  background-color: rgba(255, 255, 255, 0.9); /* 살짝 투명한 흰색 배경 */
+  padding: 10px 18px;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* 부드러운 그림자 */
+  border: 1px solid #eee;
 }
 
 .insta-link {
@@ -175,9 +185,10 @@ header {
   font-weight: bold;    
   font-size: 0.95rem;
   transition: opacity 0.2s;
+  display: block;      /* 클릭 영역 확보 */
 }
 
 .insta-link:hover {
-  opacity: 0.7;          /* 마우스 올렸을 때 살짝 투명하게 */
-  text-decoration: none; /* 호버 시에도 밑줄 방지 */
+  opacity: 0.7;          
+  text-decoration: none; 
 }
