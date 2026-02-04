@@ -172,23 +172,42 @@ header {
   z-index: 1000;      /* 다른 콘텐츠에 가려지지 않게 함 */
   
   /* 배경과 여백 */
-  background-color: rgba(255, 255, 255, 0.9); /* 살짝 투명한 흰색 배경 */
-  padding: 10px 18px;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 12px 20px;
   border-radius: 30px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* 부드러운 그림자 */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
   border: 1px solid #eee;
+
+  /* 순간 이동 방지를 위한 초기 상태와 애니메이션 */
+  visibility: hidden;           /* 초기에는 보이지 않게 */
+  opacity: 0;
+  animation: fadeInFixed 0.5s forwards; /* 0.5초 동안 서서히 나타남 */
+  animation-delay: 0.2s;        /* 스타일이 완전히 잡힌 뒤 나타나도록 지연 */
+}
+
+@keyframes fadeInFixed {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px); /* 살짝 아래에서 올라오는 효과 */
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
 }
 
 .insta-link {
-  color: black;     
+  color: black;      
   text-decoration: none; 
   font-weight: bold;    
   font-size: 0.95rem;
-  transition: opacity 0.2s;
-  display: block;      /* 클릭 영역 확보 */
+  display: flex;
+  align-items: center;
+  transition: 0.2s;
 }
 
 .insta-link:hover {
-  opacity: 0.7;          
-  text-decoration: none; 
+  transform: scale(1.05); /* 마우스 올리면 살짝 커짐 */
 }
