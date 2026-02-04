@@ -137,9 +137,9 @@ header {
 
 .review-content:target { display: block; }
 .main-img:has(.review-content:target) .default-msg { display: none; }
-
 .review-content h2 { font-size: 1.5rem; margin-bottom: 10px; }
 
+/*리뷰 가격대 설정*/
 .price-tag {
   display: inline-block;
   background: #e1f0fa;
