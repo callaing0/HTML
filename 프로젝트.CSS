@@ -26,24 +26,27 @@ header {
   justify-content: center;
 }
 
+/*메뉴 전체 위치 설정*/
 .nav-container {
   width: 1200px;
   height: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /*로고는 왼쪽, 메뉴는 오른쪽*/
   align-items: center;
   padding: 0 20px;
 }
 
 .logo-area { display: flex; align-items: center; }
-.logo-area img { height: 45px; width: auto; }
+.logo-area img { height: 45px; width: auto; } /*로고 크기*/
 
+/*메뉴 간격, 나열*/
 .nav-menu {
   display: flex;
   gap: 40px;
   list-style: none;
 }
 
+/*메뉴 글자 설정*/
 .nav-menu a {
   text-decoration: none;
   color: #000;
@@ -53,7 +56,7 @@ header {
 
 /* 3. 메인 레이아웃 */
 .main-wrapper {
-  margin-top: 70px;
+  margin-top: 70px; /*헤더 크기 반영*/
   padding: 40px 0;
   display: flex;
   justify-content: center;
@@ -62,38 +65,38 @@ header {
 .container {
   width: 1200px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /*갤러리와 패널 배치*/
   padding: 0 20px;
-  gap: 30px;
+  gap: 30px; /*갤러리와 패널 사이 간격*/
 }
 
 /* 4. 왼쪽 갤러리 - 4개씩 2줄 정렬 */
 .gallery {
   width: 800px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
-  align-content: start;
+  grid-template-columns: repeat(4, 1fr); /* 한 줄에 4개씩 동일한 비율로 배치 */
+  gap: 15px; /* 사진들 사이의 간격 */
+  align-content: start; /* 내용이 위에서부터 순차적으로 반영*/
 }
 
 .gallery a {
   text-decoration: none;
   background: white;
   padding: 10px;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border-radius: 15px; /* 모서리 둥글게 */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05); /* 은은한 그림자 효과 */
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: transform 0.25s;
+  transition: transform 0.25s; /* 마우스 올렸을 때 애니메이션 속도 */
 }
 
-.gallery a:hover { transform: translateY(-5px); }
+.gallery a:hover { transform: translateY(-5px); } /* 마우스 올리면 살짝 위로 떠오름 */
 
 .gallery img {
   width: 100%;
-  aspect-ratio: 1;
-  object-fit: cover;
+  aspect-ratio: 1; /* 1:1 비율 유지 (정사각형) */
+  object-fit: cover; /* 이미지가 비율에 맞게 꽉 차게 (찌그러짐 방지) */
   border-radius: 10px;
 }
 
@@ -102,7 +105,7 @@ header {
   margin-top: 10px;
   text-align: center;
   color: #333;
-  height: 2.5rem;
+  height: 2.5rem; /* 텍스트 높이 고정 (줄바꿈 시 레이아웃 유지용) */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -127,9 +130,9 @@ header {
 }
 
 .review-content {
-  display: none;
+  display: none; /* 평소에는 상세 내용을 숨김 */
   width: 100%;
-  animation: fadeIn 0.4s;
+  animation: fadeIn 0.4s; /* 나타날 때 페이드인 효과 적용 */
 }
 
 .review-content:target { display: block; }
@@ -155,6 +158,7 @@ header {
   word-break: keep-all;
 }
 
+/* 애니메이션: 아래에서 위로 올라오며 서서히 나타남 */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
