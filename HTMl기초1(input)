@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h4>type="text"는 문자, 숫자, 특수문자 작성 가능</h4>
+        <input type="text" name="id" id="id"><br>
+        
+        <h4>type="password"는 비밀번호 입력 시 모든 text가 *으로 표사</h4>
+        <input type="password" name="pw" id="pw"><br>
+        
+        <h4>type="number"는 숫자만 입력 가능 min, max, stop 설정 가능</h4>
+        <input type="number" name="age" id="age" min="1" max="20" stop="3"><br>
+        
+        <h4>type="email"는 이메일 형식을 감시할 수 있는 타입</h4>
+        <input type="email" name="email" id="email" placeholder="이메일을 입력해주세요"><br>
+        
+        <h4>type="color"는 색상을 선택할 수 있는 타입</h4>
+        <input type="color" name="color"><br>
+
+        <h4>type="range"는 색, 음량, 밝기 조절 (슬라이드 타입)</h4>
+        <input type="range" name="range"><br>
+
+        <h4>type="date"는 날짜 선택 타입</h4>
+        <input type="date" name="date"><br>
+
+        <h4>type="time"는 시간 선택 타입</h4>
+        <input type="time" name="time"><br>     
+        
+        <h4>type="month"는 년, 월 선택 타입</h4>
+        <input type="month" name="month"><br>          
+
+        <h4>type="week"는 년, 주차 선택 타입</h4>
+        <input type="week" name="week"><br>   
+
+        <h4>type="checkbox"는 다중 선택을 위한 박스 생성</h4>
+        <input type="checkbox" name="check" value="one"> 1번 체크해주세요 <br> 
+        <input type="checkbox" name="check" value="two"> 2번 체크해주세요 <br> 
+        <input type="checkbox" name="check" value="three"> 3번 체크해주세요 <br> 
+        
+        <h4>type="radio"는 여러 선택지 중 하나만 선택하는 타입</h4>
+        <input type="radio" name="radio" value="num1"><label for="num1">1번</label><br>   
+        <input type="radio" name="radio" value="num2">2번 <br>  
+        <input type="radio" name="radio" value="num3">3번 <br>        
+
+        <h4>type="file"는 이미지, 사진 업로드 가능한 타입</h4>
+        <input type="file" name="file"><br> 
+
+        <h4>type="hidden"는 페이지 유지, 관리, 데이터 활용 등 페이지 처리를 위한 타입(사용자 제공 목적X)</h4>
+        <input type="hidden" name="hidden" value="00"><br> 
+
+
+        <button>등록</button>
+    </form>   
+
+</body>
+</html>
